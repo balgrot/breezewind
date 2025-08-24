@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "build-css": "npm run copy-flowbite && npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
     "build-production": "npm run copy-flowbite && npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --minify",
     "copy-flowbite": "copyfiles -u 3 node_modules/flowbite/dist/flowbite.min.js js/"
   },
